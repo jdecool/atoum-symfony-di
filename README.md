@@ -1,5 +1,7 @@
 # SymfonyDependencyInjectionTest for Atoum
 
+[![Build Status](https://travis-ci.org/jdecool/atoum-symfony-di.svg?branch=master)](https://travis-ci.org/jdecool/atoum-symfony-di)
+
 This extension is inspired by [SymfonyDependencyInjectionTest](https://github.com/matthiasnoback/SymfonyDependencyInjectionTest).
 
 ## Install it

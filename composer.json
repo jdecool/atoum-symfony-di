@@ -11,8 +11,8 @@
         }
     ],
     "require": {
-        "atoum/atoum": "<3.0",
-        "symfony/dependency-injection": "^3.0"
+        "atoum/atoum": "^2.0|^3.0",
+        "symfony/dependency-injection": "^2.0|^3.0"
     },
     "autoload": {
         "psr-4": {

@@ -10,7 +10,7 @@ and used for simplify testing of Symfony DI.
 Install extension using [composer](https://getcomposer.org):
 
 ```
-composer require --dev jdecool/atoum-symfony-di
+composer require --dev jdecool/atoum-symfony-di-extension
 ```
 
 Enable the extension using atoum configuration file:

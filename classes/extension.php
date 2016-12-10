@@ -46,6 +46,8 @@ class extension implements atoum\extension
 						$asserter = new atoum\symfonyDependencyInjection\asserters\containerBuilder($test->getAsserterGenerator());
 					}
 
+					$asserter->setWithTest($test);
+
 					return $asserter->setWith($object);
 				}
 			)
@@ -56,6 +58,8 @@ class extension implements atoum\extension
 					{
 						$asserter = new atoum\symfonyDependencyInjection\asserters\serviceDefinition($test->getAsserterGenerator());
 					}
+
+					$asserter->setWithTest($test);
 
 					return $asserter->setWith($object);
 				}

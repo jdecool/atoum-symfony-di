@@ -43,7 +43,7 @@ class extension implements atoum\extension
 				function($object) use ($test, & $asserter) {
 					if ($asserter === null)
 					{
-						$asserter = new atoum\symfonyDependencyInjection\asserters\containerBuilder($test->getAsserterGenerator());
+						$asserter = new asserters\containerBuilder($test->getAsserterGenerator());
 					}
 
 					$asserter->setWithTest($test);
@@ -56,7 +56,7 @@ class extension implements atoum\extension
 				function($object) use ($test, & $asserter) {
 					if ($asserter === null)
 					{
-						$asserter = new atoum\symfonyDependencyInjection\asserters\serviceDefinition($test->getAsserterGenerator());
+						$asserter = new asserters\serviceDefinition($test->getAsserterGenerator());
 					}
 
 					$asserter->setWithTest($test);

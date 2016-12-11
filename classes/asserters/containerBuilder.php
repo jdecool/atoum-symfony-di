@@ -113,7 +113,7 @@ class containerBuilder extends asserters\variable
 			}
 			else
 			{
-				$this->fail($this->_('%s is not an instance of Symfony\Component\DependencyInjection\ContainerBuilder', get_class($this->value)));
+				$this->fail($this->_('%s is not an instance of Symfony\Component\DependencyInjection\ContainerBuilder', is_object($this->value) ? get_class($this->value) : gettype($this->value)));
 			}
 		}
 

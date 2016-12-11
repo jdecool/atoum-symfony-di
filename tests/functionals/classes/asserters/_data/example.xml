@@ -1,0 +1,25 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+                               http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="mailer.transport">sendmail</parameter>
+    </parameters>
+
+    <services>
+        <service id="myAwesomeAlias" alias="serviceid" />
+
+        <service id="serviceid" class="ArrayObject" >
+            <argument type="collection">
+                <argument type="service"><service class="stdClass" /></argument>
+            </argument>
+            <call method="append">
+                <argument type="service"><service class="stdClass" /></argument>
+            </call>
+            <tag name="myCustomTag" />
+        </service>
+
+        <service id="app.synthetic_service" synthetic="true" />
+    </services>
+</container>

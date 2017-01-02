@@ -19,6 +19,7 @@ class extension implements atoum\extension
 
 			$handler = function($script, $argument, $values) {
 				$script->getRunner()->addTestsFromDirectory(dirname(__DIR__) . '/tests/units/classes');
+				$script->getRunner()->addTestsFromDirectory(dirname(__DIR__) . '/tests/functionals/classes');
 			};
 
 			$script

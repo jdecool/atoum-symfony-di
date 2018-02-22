@@ -24,7 +24,7 @@ class containerBuilder extends atoum\test
 	{
 		$this
 			->containerBuilder($this->initializeContainer())
-				->hasService('serviceId')
+				->hasService('serviceid')
 		;
 	}
 
